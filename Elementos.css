@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+
+@font-face {
+    font-family: 'Sarala', sans-serif;
+    src: url(/fonts/Geometry\ Soft\ Pro-Bold\ N.otf);
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(45, 45, 45);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.botaovoltar {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.info-section,
+.image-section {
+    margin: 20px;
+    padding: 10px;
+    color: #000000;
+    background-color: #fffcfc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}

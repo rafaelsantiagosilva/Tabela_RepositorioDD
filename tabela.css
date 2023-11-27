@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+
+@font-face {
+    font-family: 'Sarala', sans-serif;
+    src: url(/fonts/Geometry\ Soft\ Pro-Bold\ N.otf);
+}
+
+:root {
+    --hidrogenio: #99ffaf;
+    --nao-metais: #d7b981fa;
+    --gases-nobres: #8d8242;
+    --metais-alcalinos: #ffd683;
+    --metais-transicao: #b197f8;
+    --outros-metais: #7cc4ff;
+    --lantanideos: #ffcd28;
+    --metais-alcalinos-terrosos: #ecff7d;
+    --semi-metais: #0066c5;
+    --halogenios: #00c3ff;
+    --actinideos: #d6bfc0;
+    --cor-body: rgb(255, 255, 255);
+    --titulo: rgb(255, 255, 255);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    z-index: 0;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4%;
+    font-family: 'Sarala', sans-serif;
+}
+
+#titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+
+
+#legendas {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.container {
+    margin: 3px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.botaovoltar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section {
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+td {
+    border: 3px solid;
+    border-radius: 7px;
+    width: 100px;
+    height: 70px;
+    background-color: rgba(12, 30, 58, 0.445);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+table {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 70px;
+    padding-bottom: 40px;
+    /* background-color: var(--cor-tabela); */
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    z-index: 1;
+    scale: 0.8;
+}
+
+
+
+/*Formatação dos elementos*/
+
+.hidrogenio {
+    border-color: var(--hidrogenio);
+}
+
+.hidrogenio li {
+    color: var(--hidrogenio);
+}
+
+#hidrogenio:before {
+    border-color: var(--hidrogenio);
+}
+
+.naometais {
+    border-color: var(--nao-metais);
+}
+
+.naometais li {
+    color: var(--nao-metais);
+}
+
+#nao-metal:before {
+    border-color: var(--nao-metais);
+}
+
+.gasesnobres {
+    border-color: var(--gases-nobres);
+}
+
+.gasesnobres li {
+    color: var(--gases-nobres);
+}
+
+#gas-nobre:before {
+    border-color: var(--gases-nobres);
+}
+
+.metaisalcalinos {
+    border-color: var(--metais-alcalinos);
+}
+
+.metaisalcalinos li {
+    color: var(--metais-alcalinos);
+}
+
+#metal-alcalino:before {
+    border-color: var(--metais-alcalinos);
+}
+
+.metaistransicao {
+    border-color: var(--metais-transicao);
+}
+
+.metaistransicao li {
+    color: var(--metais-transicao);
+}
+
+#metal-transicao:before {
+    border-color: var(--metais-transicao);
+}
+
+.outrosmetais {
+    border-color: var(--outros-metais);
+}
+
+.outrosmetais li {
+    color: var(--outros-metais);
+}
+
+#outros-metais:before {
+    border-color: var(--outros-metais);
+}
+
+.lantanideos {
+    border-color: var(--lantanideos);
+}
+
+.lantanideos li {
+    color: var(--lantanideos);
+}
+
+#lantanideo:before {
+    border-color: var(--lantanideos);
+}
+
+.metaisalcalinosterrosos {
+    border-color: var(--metais-alcalinos-terrosos);
+}
+
+.metaisalcalinosterrosos li {
+    color: var(--metais-alcalinos-terrosos);
+}
+
+#metal-alcalino-terroso:before {
+    border-color: var(--metais-alcalinos-terrosos);
+}
+
+.semimetais {
+    border-color: var(--semi-metais);
+}
+
+.semimetais li {
+    color: var(--semi-metais);
+}
+
+#semimetal:before {
+    border-color: var(--semi-metais);
+}
+
+.halogenios {
+    font-family: 'Montserrat';
+    border-color: var(--halogenios);
+}
+
+.halogenios li {
+    color: var(--halogenios);
+}
+
+#halogenio:before {
+    border-color: var(--halogenios);
+}
+
+.actinideos {
+    color: var(--actinideos);
+    border-color: var(--actinideos);
+}
+
+.actinideos li {
+    color: var(--actinideos);
+}
+
+#actinidio:before {
+    border-color: var(--actinideos);
+}
+
+td:hover {
+    transition: 300ms;
+    transform: scale(1.3);
+    z-index: 0;
+}
+
+#semh:hover {
+    transition: 0;
+    transform: scale(1);
+    cursor: default;
+    z-index: 0;
+}
+
+/* Formatação dos textos */
+
+.atomico {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.numero {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  
+}
+
+.elemento {
+    font-family: 'Sarala', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nome {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.colspan {
+    opacity: 0;
+}
+
+.colspan:hover {
+    cursor: default;
+    transition: 0;
+    transform: scale(1);
+}
+
+#invis {
+    opacity: 0;
+}
+
+#actinideo {
+    color: var(--lantanideos);
+}
+
+/* Formatação da legenda */
+
+label {
+    margin-bottom: 5px;
+}
+
+.list {
+    color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    line-height: 1.25;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.list:before {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    border: .125em solid;
+    border-radius: .125rem;
+    margin-right: .5em;
+    position: relative;
+    top: .25em;
+}
+
+#ullist {
+    justify-content: center;
+}
+
+.list {
+    flex-basis: auto;
+    margin-bottom: 0;
+}
+
+.list+.list {
+    margin-left: 2em;
+}
+
+/* Animação início */
+
+#animation {
+    animation: go-back 2s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
